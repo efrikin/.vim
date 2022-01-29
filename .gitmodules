@@ -1,0 +1,9 @@
+[submodule "pack/tpope/start/vim-airline"]
+	path = pack/tpope/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/tpope/start/vim-commentary"]
+	path = pack/tpope/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/tpope/start/vim-lsc"]
+	path = pack/tpope/start/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
