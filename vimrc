@@ -13,6 +13,7 @@ let g:skip_defaults_vim     = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <Leader> <NOP>
 nnoremap <Leader>b :set nomore<Bar>:buffers<Bar>:set more<CR>:buffer<Space>
 nnoremap <Leader>e :Explore %:p:h<CR>
