@@ -1,6 +1,8 @@
 filetype plugin indent on
 syntax on
 
+runtime macros/matchit.vim
+
 let g:mapleader             = "\<Space>"
 let g:netrw_banner          = 0
 let g:netrw_fastbrowse      = 0     " https://github.com/tpope/vim-vinegar/issues/13#issuecomment-489440040
