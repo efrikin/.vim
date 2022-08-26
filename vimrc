@@ -59,22 +59,6 @@ let g:lsc_reference_highlights = v:false
 let g:lsc_server_commands = {
   \"go":              {"log_level": -1, "command": "gopls"},
   \"python":          {"log_level": -1, "command": "pyls"},
-  \"javascript":      {"log_level": -1, "command": "typescript-language-server --stdio"},
-  \"javascriptreact": {"log_level": -1, "command": "typescript-language-server --stdio"},
-  \"typescript":      {"log_level": -1, "command": "typescript-language-server --stdio"},
-  \"typescriptreact": {"log_level": -1, "command": "typescript-language-server --stdio"},
-  \"php": {
-  \  "log_level": -1,
-  \  "command": "intelephense --stdio",
-  \  "message_hooks": {
-  \    "initialize": {
-  \      "initializationOptions": {"storagePath": "/tmp/intelephense"},
-  \     },
-  \  },
-  \  "workspace_config": {
-  \    "intelephense.files.exclude": ["**/node_modules/**"]
-  \  },
-  \},
 \}
 let g:lsc_auto_map = {
   \"defaults": v:true,
