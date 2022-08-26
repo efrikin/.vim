@@ -7,3 +7,6 @@
 [submodule "pack/tpope/start/vim-lsc"]
 	path = pack/tpope/start/vim-lsc
 	url = https://github.com/natebosch/vim-lsc.git
+[submodule "pack/tpope/start/vim-surround"]
+	path = pack/tpope/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
