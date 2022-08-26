@@ -55,6 +55,7 @@ silent! set completeopt=menuone,noinsert,noselect
 " let g:easygit_enable_command = 1
 let g:lsc_popup_syntax = v:false
 let g:lsc_reference_highlights = v:false
+
 let g:lsc_server_commands = {
   \"go":              {"log_level": -1, "command": "gopls"},
   \"python":          {"log_level": -1, "command": "pyls"},
@@ -90,13 +91,4 @@ autocmd BufWrite * silent! %s/[ \t\r]\+$//
 " Restore position cursor after open file
 autocmd BufLeave,BufWinLeave * silent! mkview
 autocmd BufReadPost * silent! loadview
-
-augroup go
-  autocmd!
-  autocmd FileType go setlocal shiftwidth=4 tabstop=4 softtabstop=4
-  autocmd FileType go setlocal makeprg=golangci-lint\ run
-  autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!goimports-safe.sh\<esc>:loadview\<esc>`z"
-" autocmd BufWritePost *.go silent make! <afile> | silent redraw!
-  autocmd QuickFixCmdPost [^l]* cwindow
-augroup END
 
