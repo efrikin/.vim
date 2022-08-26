@@ -44,7 +44,7 @@ set notitle nowrap nomodeline
 set nowildmenu wildmode=list:longest,full
 set shortmess=aI
 set splitright splitbelow
-set synmaxcol=300 spelllang=
+set synmaxcol=300 spelllang=en_us
 set ttimeout ttimeoutlen=50
 set undolevels=200 viminfo=""
 
