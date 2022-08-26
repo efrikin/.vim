@@ -18,8 +18,6 @@ nnoremap <Leader> <NOP>
 nnoremap <Leader>b :set nomore<Bar>:buffers<Bar>:set more<CR>:buffer<Space>
 nnoremap <Leader>e :Explore %:p:h<CR>
 nnoremap <Leader>q :bwipeout<CR>:redraw<CR>
-nnoremap <Leader>t <C-o>
-nnoremap <Tab> :wincmd w<CR>
 
 if has("clipboard")
   set clipboard^=unnamed        " On mac and Windows, use * register for copy-paste
@@ -100,11 +98,5 @@ augroup go
   autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:%!goimports-safe.sh\<esc>:loadview\<esc>`z"
 " autocmd BufWritePost *.go silent make! <afile> | silent redraw!
   autocmd QuickFixCmdPost [^l]* cwindow
-augroup END
-
-" Fix auto-indentation for YAML files
-augroup yaml_fix
-    autocmd!
-    autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 augroup END
 
