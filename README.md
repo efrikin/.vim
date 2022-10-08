@@ -7,6 +7,7 @@ The repository contains configuration files for `Vim` editor and It also makes t
 * vim-airline
 * vim-commentary
 * vim-lsc
+* vim-surround 
 
 ## Install 
 
@@ -17,6 +18,7 @@ git clone --recurse-submodules repo $HOME/.vim
 `Vim` requires `clipboard` or `xterm_clipboard` support for access to system clipboard
 
 ### Fedora
+
 ```bash
 dnf install vim-X11
 alias vim='vimx'
