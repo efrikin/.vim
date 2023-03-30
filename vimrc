@@ -28,6 +28,7 @@ if has("clipboard")
 endif
 
 set pastetoggle=<f1>
+set background=dark
 set nocompatible
 set encoding=utf-8 fileformats=unix fileencodings=utf-8,cp1251,koi8-r,cp866
 set foldlevel=99 foldmethod=indent " za to toggle, opens all by default
