@@ -32,7 +32,7 @@ set background=dark
 set nocompatible
 set encoding=utf-8 fileformats=unix fileencodings=utf-8,cp1251,koi8-r,cp866
 set foldlevel=99 foldmethod=indent " za to toggle, opens all by default
-set hidden
+set hidden confirm
 set hlsearch incsearch ignorecase smartcase showmatch
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖХЪ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:{},фисвуапршолдьтщзйкыегмцчняхъ;abcdefghijklmnopqrstuvwxyz[]
 set laststatus=2 noruler statusline=\%M\%f%=\%l:\%c
@@ -46,7 +46,7 @@ set notitle nowrap nomodeline
 set nowildmenu wildmode=list:longest,full
 set shortmess=aI
 set splitright splitbelow
-set synmaxcol=300 spelllang=en_us
+set synmaxcol=256 spelllang=en_us
 set ttimeout ttimeoutlen=50
 set undolevels=200 viminfo=""
 
