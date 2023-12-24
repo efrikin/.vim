@@ -9,11 +9,6 @@ let g:netrw_fastbrowse      = 0     " https://github.com/tpope/vim-vinegar/issue
 let g:netrw_use_errorwindow = 1     " https://github.com/vim/vim/issues/7828
 let g:skip_defaults_vim     = 1
 
-" Airline theme
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_powerline_fonts=1
-
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <Leader> <NOP>
 nnoremap <Leader>b :set nomore<Bar>:buffers<Bar>:set more<CR>:buffer<Space>
@@ -86,4 +81,6 @@ autocmd BufWrite * silent! %s/[ \t\r]\+$//
 " Restore position cursor after open file
 autocmd BufLeave,BufWinLeave * silent! mkview
 autocmd BufReadPost * silent! loadview
+
+source ~/.vim/sources/statusline.vim
 
