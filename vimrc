@@ -49,6 +49,8 @@ set splitright splitbelow
 set synmaxcol=256 spelllang=en_us
 set ttimeout ttimeoutlen=50
 set undolevels=200 viminfo=""
+set lazyredraw
+set regexpengine=1
 
 silent! colorscheme google_dark
 silent! set completeopt=menuone,noinsert,noselect
