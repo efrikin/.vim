@@ -66,13 +66,6 @@ let g:lsc_server_commands = {
   \"go":              {"log_level": -1, "command": "gopls"},
   \"python":          {"log_level": -1, "command": "pyls"},
 \}
-let g:lsc_auto_map = {
-  \"defaults": v:true,
-  \"ShowHover": "<leader>k",
-  \"GoToDefinition": "<leader>]",
-  \"FindReferences": "<leader>[",
-  \"FindImplementations": "<leader>i",
-\}
 
 " Delete trailing spaces before saving.
 " Use ":autocmd!" to disable this temporary
@@ -83,4 +76,5 @@ autocmd BufLeave,BufWinLeave * silent! mkview
 autocmd BufReadPost * silent! loadview
 
 source ~/.vim/sources/statusline.vim
+source ~/.vim/sources/go.vim
 
