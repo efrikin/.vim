@@ -77,4 +77,5 @@ autocmd BufReadPost * silent! loadview
 
 source ~/.vim/sources/statusline.vim
 source ~/.vim/sources/go.vim
+source ~/.vim/sources/yaml.vim
 
