@@ -31,12 +31,11 @@ vim --version | grep clipboard
 #### Configuration
 
 ```bash
-git clone --recurse-submodules repo $HOME/.vim
+git clone --recurse-submodules https://github.com/efrikin/.vim.git $HOME/.vim
 ```
 
 ```bash
-mkdir -p ~/.local/share/fonts
-curl -OL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/LiberationMono.zip
-# unzip and move to ~/.local/share/fonts
+mkdir -p ~/.local/share/fonts && cd $_
+curl -Lo- https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/LiberationMono.tar.xz | tar xJ-
 ```
 
